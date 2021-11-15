@@ -1,0 +1,195 @@
+:root {
+    --background-color: #009244;
+    --foreground-color: rgb(250, 250, 250);
+    --font-color: #000;
+    --button-color: #00C25D;
+    --link-color: #00C25D;
+    --link-hover: #002712;
+}
+
+html[data-theme='light'] {
+    --background-color: #009244;
+    --foreground-color: rgb(250, 250, 250);
+    --font-color: #000;
+    --button-color: #00C25D;
+    --link-color: #00C25D;
+    --link-hover: #002712;
+}
+
+html[data-theme='dark'] {
+    --background-color: #009244;
+    --foreground-color: #000;
+    --font-color: #fff;
+    --button-color: #00C25D;
+    --link-color: #00C25D;
+    --link-hover: #00ff77;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+    background: var(--background-color);
+    font-family: sans-serif;
+    color: var(--font-color);
+}
+
+p {
+    text-align: left;
+    padding: 10%;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 95%;
+}
+
+h2 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+h4 {
+    padding: 12px;
+}
+
+a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    font-weight: bold;
+}
+
+.one-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    display: flex;
+}
+
+.two-grid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.four-grid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+form{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: var(--foreground-color);
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 31px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+    0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.button {
+    text-align: center;
+    background-color: var(--button-color);;
+    border: 2px solid #8a87872b;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 20px;
+}
+
+.build-with-skynet {
+    width: 400px;
+    text-align: center;
+    border: 2px solid #8a87872b;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 20px;
+}
+
+.build-with-skynet:hover {
+    border: #000 2px solid;
+    cursor: pointer;
+}
+
+.explore-skynet {
+    width: 400px;
+    text-align: center;
+    border: 2px solid #8a87872b;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 20px;
+}
+
+.explore-skynet:hover {
+    border: #000 2px solid;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: #000 2px solid;
+    cursor: pointer;
+}
+
+.button2 {
+    text-align: center;
+    border: 2px solid #8a87872b;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 20px;
+}
+
+.button2:hover {
+    border: #000 2px solid;
+    cursor: pointer;
+}
+
+.disabled-value {
+    text-align: center;
+    border: 0;
+    color: grey;
+    padding: 12px;
+    margin: 20px;
+}
+
+/* progress bar */
+
+.bar-container {
+    margin-left: 0.5%;
+    width: 99%;
+    height: 8px;
+    background-color: gray;
+    margin-top: 19px;
+}
+
+#bar {
+    height: 100%;
+    background-color: #00c65e;
+    width: 0;
+}
+
+/* iframe */
+
+iframe {
+    border: 2px solid grey;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+}
+
+.body-image {
+    justify-self: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+li {
+    padding-top: 10px;
+}
+
+code {
+    background-color: rgb(228, 228, 228);
+}

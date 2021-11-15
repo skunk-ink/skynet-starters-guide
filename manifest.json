@@ -1,0 +1,29 @@
+{
+  "background_color": "#fff",
+  "display": "standalone",
+  "homepage_url": "https://github.com/skunk-ink/get-started-with-skynet",
+  "providedBy": { "name": "skunk-ink", "url": "https://github.com/skunk-ink/get-started-with-skynet" },
+  "icons": [
+    {
+      "src": "./img/192x192_App_Icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./img/512x512_App_Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "name": "Getting started with Skynet",
+  "description": "A guide for new users and developers alike!",
+  "iconPath": "./img/256x256_App_Icon.png",
+  "short_name": "Skynet Starting Guide",
+  "start_url": ".",
+  "theme_color": "#ff007a",
+  "skylink": "AQCIcIe2dq4na7MA5Tu7GBdekAgABBj4Z6Q8_2TcmrD0AQ"
+  
+}

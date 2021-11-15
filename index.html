@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with Skynet</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="./img/192x192_App_Icon.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="./img/512x512_App_Icon.png" />
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <script src="darkmode.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        const options = {
+          mixColor: '#00C25D', // default: '#fff'
+          backgroundColor: '#fff',  // default: '#fff'
+          buttonColorDark: '#00C25D',  // default: '#100f2c'
+          buttonColorLight: '#fff', // default: '#fff'
+          label: '🌓', // default: ''
+        }
+        document.querySelector('body').style.backgroundColor = 'white';
+        new Darkmode(options).showWidget();
+      }
+      window.addEventListener('load', addDarkmodeWidget);
+    </script> -->
+
+    <div class="main-container">
+        <form>
+            <!-- <div class="bar-container">
+                <div id="bar"></div>
+            </div> -->
+
+            <!-- START -->
+
+            <div class="start" id="start-1">
+                <h2>Getting started with Skynet</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <h1 style="text-align: left; padding-bottom: 25px; padding-left: 5%; padding-right: 5%;">Skynet is the foundation for a new, <span style="color: #00c65e;"><u style="text-decoration-color: #000;">decentralized internet</u></span></h1>
+                    <div style="font-size: 16px; text-align: left; padding-bottom: 25px; padding-left: 5%; padding-right: 5%;">
+                        Skynet is an open protocol and toolkit for creating a better web — one built on decentralized storage and applications.
+                        <br><br>
+                        Skynet apps transform what’s possible on the web. Beyond protecting privacy, decentralization enables application, integration, and innovation that simply cannot be replicated by the centralized world. Now, we can break free of the walled gardens and data silos that have constricted invention and interoperability. Key features of decentralization such as user-owned personal data, persistent identity across apps, and censorship-resistance will be the new standards of the digital world.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="disabled-value" disabled><span></span> </label>
+                    <label class="button" onclick="next('start-1', 'start-2')"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="start" id="start-2" style="display: none;">
+                <h2>Which are you?</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button2" onclick="next('start-2', 'user-1'); topFunction();"> <img class="body-image" src="./img/new-user-icon.svg" style="width: 50%; max-width: 192px;" alt="1"><br><span> New User </span></label>
+                    <label class="button2" onclick="next('start-2', 'developer-1'); topFunction();"> <img class="body-image" src="./img/new-developer-icon.svg" style="width: 50%; max-width: 192px;" alt="1"><br><span> New Developer </span></label>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('start-2', 'start-1')"><span> Back </span> </label>
+                    <label class="disabled-value" disabled><span></span> </label>
+                </div>
+            </div>
+
+            <!-- USER -->
+
+            <div class="user" id="user-1" style="display: none;">
+                <h2>Why Skynet?</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <span style="font-size: 18px;">Skynet matters because information matters. Skynet allows for a decentralized web that is censorship-resistant, has highly redundant storage and applications, and is available around the globe.</span>
+                    <h3 style="padding-top: 10px;">For Users</h3>
+                    <ul style="font-size: 16px;">
+                        <li>You take your data with you, not worrying about corporate oversight</li>
+                        <li>You support developers and content creators by simply accessing their work</li>
+                        <li>You experience a web free of targeted adsYou never have to put your privacy or security at risk</li>
+                    </ul>
+
+                    <h3 style="padding-top: 10px;">Who controls Skynet?</h3>
+                    <div style="font-size: 16px; ;">
+                        Skynet itself is open-source software, meaning it's free to take and use for anyone. This site is operated by <a href="https://siasky.net" target="_blank" rel="noopener noreferrer">Skynet Labs</a>, the primary team behind the technology. Skynet is built on top of the Sia blockchain network, which is also open-source and guided by the <a href="https://sia.tech" target="_blank" rel="noopener noreferrer">Sia Foundation</a>.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-1', 'start-2'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-1', 'user-2'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-2" style="display: none;">
+                <h2>Using a Portal: User Accounts</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        User Accounts let users signup for a membership with a specific portal. This accomplishes many things, but most importantly:
+                        <ul style="font-size: 16px;">
+                            <li>It lets users keep track of what skyfiles a portal is pinning for them.</li>
+                            <li>It lets portals generate revenue by charging a fee to users who want upgraded service.</li>
+                            <li>It lets users who wish to pay extra have extended file pinning and increased speeds.</li>
+                            <li>It helps reduce spam and abuse of the network.</li>
+                            <li>And it provides the foundation for an alternative economy where users support Skynet, developers, and content creators without needing to worry about how to obtain cryptocurrency and without introducing advertisers into the mix.</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 16px; ;">
+                        User accounts follow a "freemium" model, where anyone can access any of the content on Skynet for free, but users putting money into the network get a better experience. By choosing a paid tier, you're not only speeding up your own access, but also participating in an economy that can support the content creators, portal operators, and developers trying to build a better future for the internet.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-2', 'user-1'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-2', 'user-3'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-3" style="display: none;">
+                <h2>Using a Portal: File Pinning</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        When you upload a file to Skynet, it gets broken up and stored across hosts on the Sia network. Portals are responsible for sending out that data, but also for making sure that Sia hosts hold on to the data and keep it online. This process is called "pinning" the file and is done by the portal.
+                        <br><br>
+                        Pinning is a portal's way of saying it will pay to keep a file on the network, and if any hosts go offline, the portal will find new ones to make sure it's always available. Portals set their own policies about how long they will pin a file, so some files may only be pinned for 3 months, while others might be pinned indefinitely.
+                        <br><br>
+                        <div style="background-color: rgb(228, 228, 228); font-size: 14px; padding-top: 10px; padding-bottom: 10px; padding-left: 25px; padding-right: 25px; border-radius: 10px;">
+                            <b>Note:</b> Once a skyfile is on the network, any portal can pin it. So, if a file seems at risk of being removed, another portal can agree to pay for its storage, assuring that the file remains available.
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-3', 'user-2'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-3', 'user-4'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-4" style="display: none;">
+                <h2>Using a Portal: Operating Costs</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        When it comes to accessing the Sia network, Portals act on behalf of their users. That means that web portals pay for all of the storage and bandwidth costs used to incentivize the hosts on the Sia network. This payment is done using a cryptocurrency called Siacoins.
+                        <br><br>
+                        How much this will cost depends on how many files the portal pins and how fast and often it needs to access content on Skynet. If you're running your own portal, the cost and necessary hardware can be minimal. That said, running a public web portal, like running any server, has other costs associated with it as well. To service hundreds of users all storing and accessing data on the Sia network, the portal will require fast internet, powerful hardware, and some love and care in the form of maintenance. Running a web portal isn't always cheap, and portals may ask users to help to cover these operating costs.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-4', 'user-3'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-4', 'user-5'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-5" style="display: none;">
+                <h2>Using a Portal: Sign Up</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="padding-bottom: 25px;">
+                        To create your first Portal account, fill out the form below.
+                    </div>
+                    <iframe src="https://account.siasky.net/auth/registration"></iframe>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-5', 'user-4'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-5', 'user-6'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-6" style="display: none;">
+                <h2>Your MySky!</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        MySky is a login system for the entire Skynet ecosystem. It uses modern browser security and cryptography so that all of your application data is managed by you, and central authority can disable your access.
+                        <br><br>
+                        MySky data is accessible across applications, so no application can wall you in and silo your data. Each MySky user has a unique UserID that allows their friends and followers to discover data the user has made public.
+                        <br><br>
+                        Your MySky is fully controlled by access to a secret seed phrase that is needed to login and must not be shared with anyone.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-6', 'user-5'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-6', 'user-7'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-7" style="display: none;">
+                <h2>Your Homescreen!</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; padding-bottom: 25px; ;">
+                        Homescreen provides a way for users to save immutable versions of application front-ends by saving a version of the app to their MySky files. This means each user owns their copy of the app and is in complete control of version updates. We see this as particularly necessary for the DeFi space for additional security and control over access to decentralized protocols and smart contracts.
+                    </div>
+                </div>
+                <img class="body-image" src="./img/save-to-homescreen.png">
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-7', 'user-6'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-7', 'user-8'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="user" id="user-8" style="display: none;">
+                <h2>Homescreen: Sign up</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="font-size: 16px; text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="padding-bottom: 25px;">
+                        To begin building your Homescreen, click the <img src="./img/authenticate-with-mysky.png" style="max-width: 175px;"> button in the window below.
+                    </div>
+                    <iframe src="https://homescreen.hns.siasky.net" target="_blank" rel="noopener noreferrer"></iframe>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-8', 'user-7'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-8', 'user-9'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <!-- <div class="user" id="user-9" style="display: none;">
+                <h2>Your SkyOS!</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+
+
+
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-9', 'user-8')"><span> Back </span> </label>
+                    <label class="disabled-value" disabled><span></span> </label>
+                </div>
+            </div> -->
+
+            <div class="user" id="user-9" style="display: none;">
+                <h2>Explore Skynet!</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; padding-bottom: 25px; ;">
+                        <h3><span style="color: #00c65e;"><u style="text-decoration-color: #000;">Congratulations</u></span>, you have completed the Skynet user tutorial!</h3>
+                        <br><br>
+                        <div class="one-grid">
+                            <label class="explore-skynet" onclick="parent.open('https://github.com/SkynetLabs/Awesome-Homescreen')"><img class="body-image" src="./img/explore-skynet.svg"></label>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('user-9', 'user-8'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('user-9', 'start-1'); topFunction();"><span> Home </span> </label>
+                </div>
+            </div>
+
+            <!-- DEVELOPER -->
+
+            <div class="developer" id="developer-1" style="display: none;">
+                <h2>Why Skynet?</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <span style="font-size: 18px;">Skynet matters because information matters. Skynet allows for a decentralized web that is censorship-resistant, has highly redundant storage and applications, and is available around the globe.</span>
+                    <h3 style="padding-top: 10px;">For Developers</h3>
+                    <ul style="font-size: 16px;">
+                        <li>You don't pay for your application's storage</li>
+                        <li>You can launch an app with access to a user's data on day one</li>
+                        <li>You won't have to worry about corporations pulling access to their resources</li>
+                        <li>Or, if you're invested in your centralized provider, you can maintain a failover site for when they go down.</li>
+                    </ul>
+
+                    <h3 style="padding-top: 10px;">Who controls Skynet?</h3>
+                    <div style="font-size: 16px; ;">
+                        Skynet itself is open-source software, meaning it's free to take and use for anyone. This site is operated by <a href="https://siasky.net" target="_blank" rel="noopener noreferrer">Skynet Labs</a>, the primary team behind the technology. Skynet is built on top of the Sia blockchain network, which is also open-source and guided by the <a href="https://sia.tech" target="_blank" rel="noopener noreferrer">Sia Foundation</a>.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-1', 'start-2'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-1', 'developer-2'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-2" style="display: none;">
+                <h2>Is Skynet the right platform for my website/app?</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        If your website is structured to be client-side, then hosting it on Skynet is straightforward. If not, it is likely your website will need to reconsider some parts of its architecture to be fully-functional on Skynet.
+                        <br><br>
+                        So, if you use Create React App or Gatsby, deploying to Skynet is as easy as uploading the folder of your production build. If you use a server-side backend like ExpressJS or a CMS like Django or Wordpress, these parts of your website cannot be run on Skynet. You can, however, host your html, css and javascript code on Skynet with your server API elsewhere, but that's not really a decentralized app and isn't what we'd call a skapp.
+                        <br><br>
+                        If you're considering developing on Skynet, take a look at the Skynet Guide's <a href="https://support.siasky.net/getting-started/skynet-basics" target="_blank" rel="noopener noreferrer">Skynet Basics</a> section to learn some basics or reach out on our <a href="https://discord.gg/skynetlabs" target="_blank" rel="noopener noreferrer">Discord server</a> in the <code>#skynet</code> or <code>#app-dev</code> channels.
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-2', 'developer-1'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-2', 'developer-3'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-3" style="display: none;">
+                <h2>Best Practices for Developing on Skynet</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        Many of these will be incorporated into our Developer Guides, but in the meantime, some things to keep in mind:
+                        <ul style="font-size: 16px;">
+                            <li>For skapps, it's best to use and link URLs that are a subdomain of the portal domain. That means either using an HNS name as a subdomain like <code>&ltskapp&gt.hns.siasky.net</code> or a <a href="https://support.siasky.net/key-concepts/skylinks#base32-subdomains" target="_blank" rel="noopener noreferrer">Base32-encoded subdomain</a>.</li>
+                            <li>If linking to code host on Skynet that is external from your project, you should use immutable skylinks when possible so that later updates don't risk breaking your code.</li>
+                            <li>To be a proper "skapp," your application shouldn't rely on external, centralized services to function. This means external requests to APIs for on-network storage or computation that would make your skapp's data not interoperable with other skapps. Web3 apps that use wallets to interact with blockchains are a good example of relying on external, decentralized services.</li>
+                            <li>Do not hardcode a specific portal domain into your code! This can be helpful for local development, but be sure to remove this before deploying to Skynet. Otherwise, the code is forced to use a portal other than the one it is being served from and works against the decentralized design of Skynet.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-3', 'developer-2'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-3', 'developer-4'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-4" style="display: none;">
+                <h2>Uploading a Site to Skynet</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; padding-bottom: 25px; ;">
+                        To get started deploying a site on Skynet, create a folder with an index.html file in it and all css and javascript linked with relative paths. Visit <a href="http://siasky.net" target="_blank" rel="noopener noreferrer">https://siasky.net/</a>, select "Do you want to upload an entire directory?" then upload the directory.
+                    </div>
+                </div>
+                <img class="body-image" src="./img/upload-directory-skynet.png">
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-4', 'developer-3'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-4', 'developer-5'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-5" style="display: none;">
+                <h2>Tools and Resources</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        Official Documentation and SDKs
+                        <ul style="font-size: 16px;">
+                            <li><a href="https://siasky.net/docs" target="_blank" rel="noopener noreferrer">Skynet SDK Docs</a> – Documentation for all the SDKs</li>
+                            <li>SDKs –</li>
+                                <ul>
+                                    <li>Browser JS: <a href="https://github.com/NebulousLabs/skynet-js" target="_blank" rel="noopener noreferrer">skynet-js</a></li>
+                                    <li>NodeJS: <a href="https://www.npmjs.com/package/@skynetlabs/skynet-nodejs" target="_blank" rel="noopener noreferrer">@skynetlabs/skynet-nodejs</a></li>
+                                    <li>Python: <a href="https://github.com/SkynetLabs/python-skynet" target="_blank" rel="noopener noreferrer">python-skynet</a></li>
+                                    <li>GoLang: <a href="https://github.com/SkynetLabs/go-skynet" target="_blank" rel="noopener noreferrer">go-skynet</a>*</li>
+                                    <li>CLI: <a href="https://github.com/SkynetHQ/skynet-cli" target="_blank" rel="noopener noreferrer">skynet-cli</a>*</li>
+                                </ul>
+                        </ul>
+                        <br><br>
+                        <div style="background-color: rgb(228, 228, 228); font-size: 14px; padding-top: 10px; padding-bottom: 10px; padding-left: 25px; padding-right: 25px; border-radius: 10px;">
+                            <b>Note:</b> SDKs marked with * above are partial implements – only <code>skynet-js</code> implements the registry, SkyDB, MySky, and resolver skylinks. It is our recommended SDK for the time being.
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-5', 'developer-4'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-5', 'developer-6'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-6" style="display: none;">
+                <h2>Deployment Tooling</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        <ul style="font-size: 16px;">
+                            <li><a href="https://gist.github.com/m-cat/2d2c0dbaf805658537344c68f3d0f7ef" target="_blank" rel="noopener noreferrer">Load skynet-js Gist</a> –Code snippet for loading <code>skynet-js</code> in browser, without build tools and without relying on a specific portal.</li>
+                            <li><a href="https://github.com/SkynetLabs/deploy-to-skynet-action" target="_blank" rel="noopener noreferrer">Deploy to Skynet Github Action</a> – Github action that deploys a directory to Skynet and comments on pull request with a skylink url. See <a href="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" target="_blank" rel="noopener noreferrer">Automated deployments on Skynet</a> for using with Handshake.</li>
+                            <li><a href="https://github.com/redsolver/skydeploy" target="_blank" rel="noopener noreferrer">SkyDeploy</a> – Command-Line Tool for easily deploying web apps on Skynet and setting the skyns records to point your HNS domain to the new version</li>
+                            <li><a href="https://github.com/cycleworm/Upload2Cloud" target="_blank" rel="noopener noreferrer">Upload2Cloud</a> – Windows Explorer integration for sending files and directories to Skynet. Python script available.</li>
+                            <li><a href="https://github.com/Delivator/vue-cli-plugin-skynet" target="_blank" rel="noopener noreferrer">Vue CLI Deployment Plugin</a> – Vue UI based tool for site upload with auto Namebase/Handshake updates</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-6', 'developer-5'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-6', 'developer-7'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-7" style="display: none;">
+                <h2>Community SDKs & Initiatives</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; ;">
+                        <ul style="font-size: 16px;">
+                            <li><a href="https://github.com/redsolver/skynet" target="_blank" rel="noopener noreferrer">Skynet SDK for Dart</a> – Fully-featured Skynet and MySky SDK for use in Dart and Flutter projects</li>
+                            <li><a href="https://github.com/PowerLoom/py-skydb" target="_blank" rel="noopener noreferrer">py-skydb</a> – Python Wrapper that you can use to interact with SkyDB</li>
+                            <li><a href="https://github.com/ppamorim/skynet-swift" target="_blank" rel="noopener noreferrer">skynet-swift</a> – Swift SDK for uploads, download, registry and SkyDB</li>
+                            <li><a href="https://github.com/Beyarz/ruby-skynet" target="_blank" rel="noopener noreferrer">ruby-skynet</a> – Ruby SDK for uploads and downloads</li>
+                            <li><a href="https://github.com/SkynetHQ/skystandards" target="_blank" rel="noopener noreferrer">Skystandards</a> – A proposal for data standards to be adopted in Skynet applications in such a way that users can share and use their data in different Skynet apps</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-7', 'developer-6'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-7', 'developer-8'); topFunction();"><span> Next </span> </label>
+                </div>
+            </div>
+
+            <div class="developer" id="developer-8" style="display: none;">
+                <h2>Build on Skynet!</h2>
+                <div style="padding-bottom: 25px;">
+                    <hr>
+                </div>
+                <div style="padding-left: 5%; padding-right: 5%;">
+                    <div style="font-size: 16px; padding-bottom: 25px; ;">
+                        <h3><span style="color: #00c65e;"><u style="text-decoration-color: #000;">Congratulations</u></span>, you have completed the Skynet developer tutorial!</h3>
+                        <br><br>
+                        <div class="one-grid">
+                            <label class="build-with-skynet" onclick="parent.open('https://docs.siasky.net/skynet-workshops/introduction-workshop')"><img class="body-image" src="./img/build-with-skynet.svg"></label>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 25px;">
+                    <hr>
+                </div>
+                <div class="two-grid">
+                    <label class="button" onclick="back('developer-8', 'developer-7'); topFunction();"><span> Back </span> </label>
+                    <label class="button" onclick="next('developer-8', 'start-1'); topFunction();"><span> Home </span> </label>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div style="font-size: 11px; padding: 5px;">Created by <a href="https://github.com/skunk-ink">Skunk_Ink</a></div>
+    
+</body>
+<script src="script.js"></script>
+</html>
