@@ -1,6 +1,4 @@
 function next(currentPage, nextPage) {
-    progressBar = document.getElementById("bar");
-    
     currentPage = document.getElementById(currentPage);
     nextPage = document.getElementById(nextPage);
 
@@ -22,4 +20,24 @@ function back(currentPage, nextPage) {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+}
+
+function dropdownMenu() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+	if (!event.target.matches('.fafa-bars')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}

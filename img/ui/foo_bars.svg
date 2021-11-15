@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4955"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="foo_bars.svg">
+  <defs
+     id="defs4949" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="425.71429"
+     inkscape:cy="1040"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     inkscape:window-x="959"
+     inkscape:window-y="1080"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,385.5357"
+       orientation="1,0"
+       id="guide5007"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="89.202378,511.77975"
+       orientation="0,1"
+       id="guide5009"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4952">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,215)">
+    <g
+       id="g4752"
+       transform="matrix(2.56,0,0,2.56,-12.8,-339.16002)">
+      <rect
+         ry="10.378807"
+         style="fill:#005728;fill-opacity:1;stroke-width:0.30111751"
+         y="48.500019"
+         x="5"
+         height="43.936951"
+         width="200"
+         id="rect10-3-5" />
+      <rect
+         ry="10.378807"
+         style="fill:#005728;fill-opacity:1;stroke-width:0.30111751"
+         y="126.53153"
+         x="5"
+         height="43.936951"
+         width="200"
+         id="rect10-3-5-9" />
+      <rect
+         ry="10.378807"
+         style="fill:#005728;fill-opacity:1;stroke-width:0.30111751"
+         y="204.56305"
+         x="5"
+         height="43.936951"
+         width="200"
+         id="rect10-3-5-1" />
+    </g>
+  </g>
+</svg>
